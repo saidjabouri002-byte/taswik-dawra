@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Play, Film } from 'lucide-react';
 import { courseVideo } from '@/lib/course-video';
 
@@ -25,8 +26,9 @@ export function CourseVideo() {
           <div className="vsl-placeholder">
             <div className="vsl-topline"><span><Film size={14} />التسويق ببساطة</span><span className="vsl-coming">قريباً</span></div>
             <div className="vsl-orbit" aria-hidden="true" />
+            <div className="vsl-portrait" aria-hidden="true"><Image src="/omar-cutout.png" alt="" fill sizes="(max-width: 600px) 45vw, 340px" priority /></div>
+            <span className="vsl-play" aria-hidden="true"><Play size={30} fill="currentColor" strokeWidth={1} /></span>
             <div className="vsl-cover-copy">
-              <span className="vsl-play" aria-hidden="true"><Play size={26} fill="currentColor" strokeWidth={1} /></span>
               <h2>قرارات أوضح.<br />تسويق أبسط.</h2>
               <p>مع عمر العسبلي</p>
             </div>
