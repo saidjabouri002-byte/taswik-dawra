@@ -83,3 +83,6 @@ section.audience .section-heading h2{font-size:min(28px,calc((100vw - 40px) * 0.
 }
 @media(max-width:350px){#plan h2{font-size:calc((100vw - 40px) * 0.0440)}#instructor h2{font-size:calc((100vw - 40px) * 0.0740)}#register h2{font-size:calc((100vw - 40px) * 0.0860)}}
 @media(max-width:600px){.vsl-placeholder>.vsl-play{left:40%}}
+/* Headline: fixed line breaks so phones always show 2 black lines + 1 gold line */
+.hero h1>.h1-black{color:inherit;display:inline}
+@media(max-width:600px){.hero h1{text-wrap:wrap}.hero h1 .h1-line,.hero h1>span:not(.h1-black){display:block;white-space:nowrap}}
